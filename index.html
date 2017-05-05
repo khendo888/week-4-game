@@ -30,42 +30,42 @@
 				<p>You will be given a random number at the start of the game.<br><br>
 				There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
 				<br><br>
-				You win the game by matching your total score to a random number; you lose the game if your total score goes above the random number.<br><br>
+				You win the game by matching your total score to the random number; you lose the game if your total score goes above the random number.<br><br>
 				The value of each crystal is hidden from you until you click on it.<br><br>
-				Each time when the game starts, the game will change the values of each crystal.<br><br><br>
+				Each time a new game starts, the random number and the values of each crystal will be changed.<br><br><br>
 				</p>
 			</div>
 		</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<p>SOME NUMBER<br><br><br><br></p>
+				<p id=compNumber>COMPUTER GENERATED RANDOM NUMBER<br><br><br><br></p>
 			</div>
 			<div class="col-md-2">
-				<p>Wins<br><br>
-				Losses<br><br></p>
+				<p>Wins: <br><br>
+				Losses: <br><br></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
 				<div class="col-md-2">
     				<a href="#" class="thumbnail">
-      					<img src="assets/images/emerald.jpeg">
+      					<img id=green src="assets/images/emerald.jpeg">
     				</a>
     			</div>
     			<div class="col-md-2">
     				<a href="#" class="thumbnail">
-      					<img src="assets/images/ruby.jpeg">
+      					<img id=red src="assets/images/ruby.jpeg">
     				</a>
     			</div>
     			<div class="col-md-2">
     				<a href="#" class="thumbnail">
-      					<img src="assets/images/sapphire.jpeg">
+      					<img id=blue src="assets/images/sapphire.jpeg">
     				</a>
     			</div>
     			<div class="col-md-2">
     				<a href="#" class="thumbnail">
-      					<img src="assets/images/topaz.jpeg">
+      					<img id=yellow src="assets/images/topaz.jpeg">
     				</a>
     			</div>
     		</div>
@@ -78,28 +78,26 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<p>SOME NUMBER<br><br><br><br></p>
+				<p id=totalScore>NUMBER FROM CRYSTAL CLICKS<br><br><br><br></p>
 			</div>	
 		</div>
 
 	</div>
 
-
-<script type="text/javascript">
-	
- 	// Start JavaScript
-   $(document).ready(function() {
-
-//define variablessz
-//var 
-
-
-
-
+<!--Object of the game is to guess number of each crystal and add it to the total without going over the randomly generated number at the top 
+when game opens: computer generates random number (19-120) that is displayed in box
+				 computer generates random number (1-12) for each crystal that remains hidden 
+				 when a crystal is clicked, the number will be added to bottom box (Total nunmber is:"")
+				 each click will add to the total. if the number goes over, I lose (add 1 to losses). if I match the number without going over, i win (add 1 to wins)
+				 after win/loss is incremented, new random numbers must be generated for the control number and each of the crystals. -->
 
 
 	
-//	}
+ <!--Start JavaScript-->
+  <script src="assets/javascript/game.js">
+
+	 $(document).ready(function() {
+}
 	</script>
 </body>
 </html>
