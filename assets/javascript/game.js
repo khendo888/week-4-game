@@ -25,7 +25,7 @@ function restartGame() {
 
 }
 
-function getRandomNumber(min, max) {
+function getRandomNumber(min, max) {      //should this be used?
    return Math.random() * (max - min) + min;
 }
 
@@ -37,7 +37,7 @@ wins++;
 function lose () {
 	if (totalScore>compNumber);
 losses++;
-restartGame;
+restartGame();
 
 }
 
