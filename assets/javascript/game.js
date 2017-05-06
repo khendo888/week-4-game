@@ -52,9 +52,9 @@ losses++;
 
 $("#winGame").html("Wins: " + wins);
 	console.log(wins);  
-$("loseGame").html("Losses: " + losses);
+$("#loseGame").html("Losses: " + losses);
 	console.log(losses);
-$("compGuess").html("Computer-generated random number: " + compNumber);
+$("#compGuess").html("Computer-generated random number: " + compNumber);
 	console.log(compNumber); //is the random number in the range?
 
 
