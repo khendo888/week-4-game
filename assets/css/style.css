@@ -11,15 +11,15 @@ body {
 h1 {
 	padding: 20px;
 	background-color: #cce5ff;
-	font-family: "Verdana, Arial, sans-serif";
+	font-family: Verdana, Arial, sans-serif;
 	font-weight: bolder;
-	font-size: 46px;
+	font-size: 42px;
 }
 
 p {
-	font-family: "Verdana, Arial, sans-serif";
+	font-family: Verdana, Arial, sans-serif;
 	padding: 20px;
-	font-size: 18px;
+	font-size: 16px;
 	background-color: #cce5ff;
 }
 #totalScore {
