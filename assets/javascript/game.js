@@ -42,7 +42,14 @@ function startGame () {
 	compNumber = Math.floor(Math.random() * 120) + 19;
 	//var compNumber=Math.floor(Math.random() * (max - min + 1)) + min;
 	wins=0;
+	$("#winGame").html("Wins: " + wins);
+	console.log("wins: " + wins);  
 	losses=0;
+	$("#loseGame").html("Losses: " + losses)
+	console.log("losses: " + losses);	
+	totalScore=0;
+	$("#totalScore").html(totalScore);
+	console.log("totalScore" + totalScore);
 }
 
 function generateRandomNumber (min, max) {
@@ -65,7 +72,7 @@ function lose () {
 
 // Run restartGame() initially so that it randomizes all your crystals, and after every win/loss. 
 // Empty your var blue/gree/red/blue/yellow so the value can be set within this function.
-
+startGame();
 // restartGame();
 
 	
@@ -79,6 +86,25 @@ function lose () {
 $("#green").on('click', function(){
 	totalScore=totalScore + green;
 	console.log("Green was clicked");
+	$("#totalScore").html(totalScore);
+});
+
+$("#red").on('click', function(){
+	totalScore=totalScore + red;
+	console.log("Red was clicked");
+	$("#totalScore").html(totalScore);
+});
+
+$("#blue").on('click', function(){
+	totalScore=totalScore + blue;
+	console.log("Blue was clicked");
+	$("#totalScore").html(totalScore);
+});
+
+$("#yellow").on('click', function(){
+	totalScore=totalScore + yellow;
+	console.log("Yellow was clicked");
+	$("#totalScore").html(totalScore);
 });
 
 // MAKE ALL CODE RUN WHEN YOU CLICK ANY OF THE CRYTALS. ASSIGN AN EVENT HANDLER TO THE CODE BELOW. 
@@ -96,10 +122,10 @@ $("#compGuess").html("Computer-generated random number: " + compNumber);
 	console.log("compNumber: " + compNumber); //is the random number in the range?
 
 // Printing 100 instances of a randomly generated compNumber value to ensure the number is in range.
-for (var i = 0; i < 100; i++){
+/*for (var i = 0; i < 100; i++){
 	compNumber = Math.floor(Math.random() * 120) + 19;
 	console.log("compNumber: " + compNumber);
-}
+}*/
 
 // Continually checking to see if there's a win or loss. 
 if (totalScore === compNumber){
